@@ -11,7 +11,7 @@
 1.  **Instala los Paquetes:**  Necesitaremos  `jsonwebtoken`  para los tokens y  `bcryptjs`  para hashear las contraseñas de forma segura.
     
     ```
-    npm install jsonwebtoken bcryptjs
+    pnpm install jsonwebtoken bcryptjs
     ```
     
 2.  **Configuración en  `app.js`:**
