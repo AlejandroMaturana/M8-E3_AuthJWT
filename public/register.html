@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - HydroPanel Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container" style="animation: slideInRight 0.6s ease-out;">
+    <h1>Nueva Estación de Monitoreo</h1>
+    <p class="subtitle">Registra un nuevo nodo de control en la red HydroPanel Pro</p>
+
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="username">Nombre de Usuario</label>
+        <input type="text" id="username" placeholder="Elige tu alias" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña segura</label>
+        <input type="password" id="password" placeholder="Mínimo 8 caracteres" required>
+      </div>
+      <button type="submit" id="registerBtn">Unirme Ahora</button>
+    </form>
+
+    <div id="message"></div>
+
+    <div class="footer-links">
+      <p>¿Ya estás registrado? <a href="login.html">Inicia sesión aquí</a></p>
+    </div>
+  </div>
+
+  <style>
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+
+  <script src="client.js"></script>
+</body>
+
+</html>

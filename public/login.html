@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Seguro - M8-E3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Terminal de Acceso</h1>
+    <p class="subtitle">Ingresa tus credenciales de HydroPanel Pro</p>
+
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Nombre de Usuario</label>
+        <input type="text" id="username" placeholder="Tu usuario" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" placeholder="Tu clave secreta" required>
+      </div>
+      <button type="submit" id="loginBtn">Iniciar Sesión</button>
+    </form>
+
+    <div id="message"></div>
+
+    <div class="footer-links">
+      <p>¿No tienes cuenta? <a href="register.html">Regístrate gratis</a></p>
+    </div>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+
+</html>

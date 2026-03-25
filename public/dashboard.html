@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Perfil - Área Privada</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container profile-card">
+    <h1>HydroPanel Pro</h1>
+    <p class="subtitle">Monitoreo de Cultivos Activo</p>
+
+    <div class="avatar-circle" id="userInitial">🌱</div>
+    <p id="welcomeMessage" style="font-weight: 600; font-size: 1.25rem;">Accediendo a la red...</p>
+
+    <div class="info-box">
+      <div class="info-item">
+        <span class="info-label">Operador ID:</span>
+        <span id="userId">#---</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Identidad:</span>
+        <span id="userName">---</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Nivel de Acceso:</span>
+        <span id="userRole">---</span>
+      </div>
+    </div>
+
+    <button class="logout-btn" id="logoutBtn">Desconectarse de la Red</button>
+  </div>
+
+  <script src="client.js"></script>
+  <script>
+    // Pequeño script rápido para proteger la entrada directa
+    if (!localStorage.getItem('jwtToken')) {
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+
+</html>
